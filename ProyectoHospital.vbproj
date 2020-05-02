@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C1AA8A3-3826-431A-8F21-7B0384BDFBC4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProyectoHospital.My.MyApplication</StartupObject>
+    <RootNamespace>ProyectoHospital</RootNamespace>
+    <AssemblyName>ProyectoHospital</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProyectoHospital.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProyectoHospital.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Area.vb" />
+    <Compile Include="FrmAltaAreas.Designer.vb">
+      <DependentUpon>FrmAltaAreas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAltaAreas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAltaMedicos.Designer.vb">
+      <DependentUpon>FrmAltaMedicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAltaMedicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAltaPacientes.Designer.vb">
+      <DependentUpon>FrmAltaPacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAltaPacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBajaMedicos.Designer.vb">
+      <DependentUpon>FrmBajaMedicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBajaMedicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaGeneralAreas.Designer.vb">
+      <DependentUpon>FrmConsultaGeneralAreas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaGeneralAreas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaGeneralMedicos.Designer.vb">
+      <DependentUpon>FrmConsultaGeneralMedicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaGeneralMedicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaGeneralPacientes.Designer.vb">
+      <DependentUpon>FrmConsultaGeneralPacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaGeneralPacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaIndividualMedicos.Designer.vb">
+      <DependentUpon>FrmConsultaIndividualMedicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaIndividualMedicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaIndividualPacientes.Designer.vb">
+      <DependentUpon>FrmConsultaIndividualPacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaIndividualPacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificacionAreas.Designer.vb">
+      <DependentUpon>FrmModificacionAreas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificacionAreas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificacionesMedicos.Designer.vb">
+      <DependentUpon>FrmModificacionesMedicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificacionesMedicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificacionesPacientes.Designer.vb">
+      <DependentUpon>FrmModificacionesPacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificacionesPacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporteAreas.Designer.vb">
+      <DependentUpon>FrmReporteAreas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReporteAreas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporteMedicos.Designer.vb">
+      <DependentUpon>FrmReporteMedicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReporteMedicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportePacientesArea.Designer.vb">
+      <DependentUpon>FrmReportePacientesArea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportePacientesArea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportePacientesSexo.Designer.vb">
+      <DependentUpon>FrmReportePacientesSexo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportePacientesSexo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funciones.vb" />
+    <Compile Include="Medico.vb" />
+    <Compile Include="MiModulo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Paciente.vb" />
+    <Compile Include="FrmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.vb">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAltaAreas.resx">
+      <DependentUpon>FrmAltaAreas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAltaMedicos.resx">
+      <DependentUpon>FrmAltaMedicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAltaPacientes.resx">
+      <DependentUpon>FrmAltaPacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBajaMedicos.resx">
+      <DependentUpon>FrmBajaMedicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaGeneralAreas.resx">
+      <DependentUpon>FrmConsultaGeneralAreas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaGeneralMedicos.resx">
+      <DependentUpon>FrmConsultaGeneralMedicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaGeneralPacientes.resx">
+      <DependentUpon>FrmConsultaGeneralPacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaIndividualMedicos.resx">
+      <DependentUpon>FrmConsultaIndividualMedicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaIndividualPacientes.resx">
+      <DependentUpon>FrmConsultaIndividualPacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificacionAreas.resx">
+      <DependentUpon>FrmModificacionAreas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificacionesMedicos.resx">
+      <DependentUpon>FrmModificacionesMedicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificacionesPacientes.resx">
+      <DependentUpon>FrmModificacionesPacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporteAreas.resx">
+      <DependentUpon>FrmReporteAreas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporteMedicos.resx">
+      <DependentUpon>FrmReporteMedicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportePacientesArea.resx">
+      <DependentUpon>FrmReportePacientesArea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportePacientesSexo.resx">
+      <DependentUpon>FrmReportePacientesSexo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7972.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6352.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\propuesta 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\propuesta 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título-4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título-41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
